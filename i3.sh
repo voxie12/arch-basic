@@ -19,12 +19,12 @@ sudo pacman -S --noconfirm paru
 paru -S --noconfirm auto-cpufreq
 sudo systemctl enable auto-cupfreq
 
-paru -S --noconfirm --needed xorg xorg-xinit i3-wm i3status  xwallpaper sxiv mpv rxvt-unicode pcmanfm fish neofetch lxappearance arc-gtk-theme arc-icon-theme archlinux-wallpaper lxsession
+paru -S --noconfirm --needed xorg xorg-xinit i3 chromium xwallpaper sxiv mpv rxvt-unicode pcmanfm fish neofetch lxappearance arc-gtk-theme arc-icon-theme archlinux-wallpaper lxsession
 
 install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/bspwmrc
 install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/sxhkdrc
 
-echo "xset r rate 360 60" >> ~/.config/bspwm/bspwmrc
+#echo "xset r rate 360 60" >> ~/.config/bspwm/bspwmrc
 echo "xsetroot -cursor_name left_ptr" >> ~/.config/bspwm/bspwmrc
 echo "xwallpaper --maximize /usr/share/backgrounds/archlinux/archwave.png" >> ~/.config/bspwm/bspwmrc
 sed -i /urxvt/alacritty -e fish/

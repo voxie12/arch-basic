@@ -15,7 +15,8 @@ echo root:password | chpasswd
 
 # pacman -S --noconfirm grub efibootmgr networkmanager network-manager-applet dialog wpa_supplicant mtools dosfstools reflector base-devel linux-headers avahi xdg-user-dirs xdg-utils gvfs gvfs-smb nfs-utils inetutils dnsutils bluez bluez-utils cups hplip alsa-utils pulseaudio bash-completion openssh rsync reflector acpi acpi_call tlp virt-manager qemu qemu-arch-extra ovmf bridge-utils dnsmasq vde2 openbsd-netcat ebtables iptables ipset firewalld flatpak sof-firmware nss-mdns acpid
 
-pacman -S --noconfirm grub networkmanager network-manager-applet dialog mtools dosfstools reflector git base-devel linux-headers xdg-user-dirs xdg-utils pulseaudio alsa-utils bash-completion openssh rsync virt-manager qemu qemu-arch-extra ovmf bridge-utils dnsmasq vd2 openbsd-netcat ebtables iptables ipset flatpak 
+pacman -S --noconfirm grub networkmanager network-manager-applet dialog mtools dosfstools reflector git base-devel linux-headers xdg-user-dirs xdg-utils pulseaudio alsa-utils bash-completion openssh rsyncflatpak 
+#pacman -S --noconfirm  virt-manager qemu qemu-arch-extra ovmf bridge-utils dnsmasq vd2 openbsd-netcat ebtables iptables ipset 
 
 # pacman -S --noconfirm acpi acpi_call # for laptop
 
