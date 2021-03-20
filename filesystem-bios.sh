@@ -4,7 +4,7 @@ loadkeys uk
 
 pacman -Sy
 
-sgdisk -o /dev/sda
+echo 'label: dos' | sfdisk /dev/sda 
 sgdisk -n 1:0:0 /dev/sda
 
 mkfs.ext4       /dev/sda1
