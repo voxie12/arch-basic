@@ -10,6 +10,7 @@ pacman -S --noconfirm --needed terminus-font
 pacman -S --noconfirm --needed telegram-desktop
 pacman -S --noconfirm --needed scrot
 pacman -S --noconfirm --needed firefox
+pacman -S --noconfirm --needed firefox-dark-reader
 pacman -S --noconfirm --needed gparted
 pacman -S --noconfirm --needed lxsession
 pacman -S --noconfirm --needed bpytop

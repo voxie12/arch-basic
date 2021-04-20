@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 ln -sf /usr/share/zoneinfo/Europe/London /etc/localtime
 hwclock --systohc
@@ -41,9 +41,5 @@ systemctl enable tlp
 
 useradd -mG wheel jay
 echo jay:jay | chpasswd
-
-touch /etc/sysctl.d/99-sysctl.conf
-echo "vm.swappiness = 10"         >> /etc/sysctl.d/99-sysctl.conf
-echo "vm.vfs_cache_pressure = 50" >> /etc/sysctl.d/99-sysctl.conf
 
 /bin/echo -e "\e[1;32mDone! Type exit, umount -a and reboot.\e[0m"
