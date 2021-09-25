@@ -9,14 +9,14 @@ sudo firewall-cmd --add-port=1025-65535/tcp --permanent
 sudo firewall-cmd --add-port=1025-65535/udp --permanent
 sudo firewall-cmd --reload
 
-git clone https://aur.archlinux.org/pikaur.git
-cd pikaur/
+git clone https://aur.archlinux.org/paru-bin.git
+cd paru-bin
 makepkg -si --noconfirm
 
-#pikaur -S --noconfirm system76-power
+#paru -S --noconfirm system76-power
 #sudo systemctl enable --now system76-power
 #sudo system76-power graphics integrated
-#pikaur -S --noconfirm auto-cpufreq
+#paru -S --noconfirm auto-cpufreq
 #sudo systemctl enable --now auto-cpufreq
 
 
