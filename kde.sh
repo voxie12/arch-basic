@@ -5,9 +5,9 @@ sudo hwclock --systohc
 
 sudo reflector -c Switzerland -a 6 --sort rate --save /etc/pacman.d/mirrorlist
 
-sudo firewall-cmd --add-port=1025-65535/tcp --permanent
-sudo firewall-cmd --add-port=1025-65535/udp --permanent
-sudo firewall-cmd --reload
+#sudo firewall-cmd --add-port=1025-65535/tcp --permanent
+#sudo firewall-cmd --add-port=1025-65535/udp --permanent
+#sudo firewall-cmd --reload
 
 git clone https://aur.archlinux.org/paru-bin.git
 cd paru-bin
