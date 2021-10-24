@@ -9,7 +9,7 @@ echo "Enter the linux partition: "
 read partition
 mkfs.ext4 $partition
 mount $partition /mnt
-reflector -l 10 -c GB --sort rate --save /etc/pacman.d/mirrorlist
+reflector --verbose -l 10 -c GB --sort rate --save /etc/pacman.d/mirrorlist
 sed -i 's/^#Para/Para/' /etc/pacman.conf
 pacstrap /mnt base base-devel linux linux-firmware intel-ucode git neovim
 genfstab -U /mnt >> /mnt/etc/fstab
