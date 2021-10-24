@@ -41,7 +41,7 @@ sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=0/g' /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
 sed -i 's/^#Para/Para/' /etc/pacman.conf
 pacman -S --noconfirm xorg xorg-xinit noto-fonts noto-fonts-cjk sxiv mpv man-db xwallpaper \
-  youtube-dl unclutter pipirus-icon-theme zsh git rsync reflector dunst networkmanager pipewire pipewire-pulse wget opendoas
+  youtube-dl unclutter papirus-icon-theme zsh git rsync reflector dunst networkmanager pipewire pipewire-pulse wget opendoas
 systemctl enable NetworkManager
 systemctl enable fstrim.timer
 rm /bin/sh
