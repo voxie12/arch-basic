@@ -1,4 +1,6 @@
+# == MY ARCH SETUP INSTALLER == #
 #part1
+pacman --noconfirm -Sy archlinux-keyring
 loadkeys uk
 timedatectl set-ntp true
 lsblk
